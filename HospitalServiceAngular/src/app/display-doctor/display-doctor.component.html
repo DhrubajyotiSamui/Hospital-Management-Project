@@ -1,0 +1,75 @@
+<div class="container">
+
+  <form class="form-inline mt-4">
+
+    <div class="mb-2">
+      <label for="doctor">Select Doctor</label>
+      
+      <select class="form-control" #docs (click)="displayDoctorInfo(docs.value)">
+
+        <option *ngFor="let docs of doctor" value="{{docs.id}}">{{docs.name}}</option>
+
+      </select>
+    </div>
+
+
+    <div class="d-flex justify-content-center align-items-center">
+
+      <button class="btn btn-success my-4 " type="submit" (click)="hidetable()"><i class="fa fa-search"> </i>
+        Search</button>
+
+    </div>
+
+  </form>
+
+</div>
+
+
+
+
+
+<div class="card text-center">
+  <div class="card-header">
+    Doctor Information
+  </div>
+
+
+
+
+  <div class="p-5 text-center" style="height: 355px">
+    <div class="mask">
+      <div class="d-flex justify-content-center align-items-center">
+        <table class="table table-stripped" [hidden]="hidden">
+          <thead>
+            <tr>
+              <th scope="col">Doctor Name</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Age</th>
+              <th scope="col">Specilazition</th>
+              <th scope="col">Total Patient count</th>
+              <th scope="col">Action</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{doc.name}}</td>
+              <td>{{doc.gender}}</td>
+              <td>{{doc.age}}</td>
+              <td>{{doc.specialist}}</td>
+              <td>{{doc.numberOfPatient}}</td>
+
+
+              <td>
+                <button (click)=" deleteListedDoc(doc.id)" class="btn btn-danger" style="margin-left: 10px"
+                  routerLink="doctor/view"> Delete</button>
+              </td>
+
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+    </div>

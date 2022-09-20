@@ -1,0 +1,27 @@
+.form-inline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.bg {
+   /*  background-image: url(https://img.freepik.com/free-photo/empty-wheelchair-parked-park-health-care-concept_1150-4360.jpg?size=626&ext=jpg&ga=GA1.2.216834435.1658916423);
+   */ 
+   height: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2450px;
+}
+
+.container {
+    position: relative;
+    margin-left: 120px;
+    height: auto;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}

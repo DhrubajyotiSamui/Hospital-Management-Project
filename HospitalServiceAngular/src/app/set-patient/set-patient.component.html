@@ -1,0 +1,78 @@
+<div class="bg">
+  <div class="container">
+        <div class="h3 fw-bold text-dark my-4" style="margin-left: 8px; color: whitesmoke;" >Provide Patient Details
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+
+
+        
+        <form [formGroup]="patientForm" >
+
+          <div class="mb-2">
+            <label for="">Patient Name <span class="error">*</span></label>
+            <input name="name" [(ngModel)]="patient.name" required="true" type="text" class="form-control"
+              placeholder="Patient name" formControlName="name">
+
+              <small class="form-text" [ngClass]="{'error':name && name.touched && name.invalid}">Only Alphabets are
+                allowed</small>
+          </div>
+
+
+
+          <div class="mb-2">
+            <label for="">Doctor Name <span class="error">*</span> </label>
+            <select class="form-control" [(ngModel)]="patient.visitedDoctor" name="name" formControlName="visitedDoctor">
+              <option *ngFor="let doctor of doctors" value="{{doctor.id}}">{{doctor.name}}</option>
+            </select>
+           
+          </div>
+
+
+
+          <div class="mb-2">
+            <label for="">Date Of Admission <span class="error">*</span> </label>
+            <input type="date" name="field" required="true" [(ngModel)]="patient.dataOfVist" type="date" class="form-control"
+              placeholder="Enter date of admission" formControlName="dataOfVist" >
+
+              <small class="error" *ngIf="dataOfVist && dataOfVist.touched && dataOfVist.invalid">Required field</small>
+          </div>
+
+
+
+          <div class="mb-2">
+            <label for="">Age <span class="error">*</span> </label>
+            <input name="age" required="true" [(ngModel)]="patient.age" type="number" class="form-control"
+              placeholder="Enter age"  formControlName="age" >
+
+              <small class="error" *ngIf="age && age.touched && age.invalid">Required field</small>
+          </div>
+
+
+          <div class="mb-2">
+            <label for="">Precription <span class="error">*</span> </label>
+            <input name="Prescription" [(ngModel)]="patient.prescription" name="prescription" required="true" type="text"
+              class="form-control" placeholder="Enter prescription" formControlName="prescription">
+              <small class="error" *ngIf="prescription && prescription.touched && prescription.invalid">Required field</small>
+          </div>
+
+
+
+          <div class="mb-2">
+            <button type="submit" (click)="savePatient()" class="btn btn-primary"  [disabled]="patientForm.invalid">Enter</button>
+          </div>
+
+
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+ 

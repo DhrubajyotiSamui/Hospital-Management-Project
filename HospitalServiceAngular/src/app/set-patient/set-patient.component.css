@@ -1,0 +1,43 @@
+
+.bg{
+    background-image: url(https://www.uab.edu/mscenter/images/patient_care/ms-infusion-34.jpg), url(https://medicaldialogues.in/h-upload/2022/05/03/500x300_175512-vector-cartoon-style-flat-illustration-hospital-building134830-781.webp);
+    height: auto;
+    background-position: right, left;
+    background-repeat:no-repeat, no-repeat;
+    background-size: 580px 820px, 780px 820px;
+    
+}
+
+.container{
+    position: relative;
+    margin-left: 766px;
+    width: 580px;
+    height: auto;
+    background-color: hsla(217, 17%, 41%, 0.918);
+    padding-bottom: 4px;
+    padding-top: 5px;
+    padding-left:90px; 
+    padding-right: 20px;
+    opacity: 80%;
+}
+.col-md-4{
+    width: 80%;
+}
+
+.mb-2{
+    padding-bottom: 15px;
+    color: rgb(4, 6, 107);
+}
+small{
+    color: red;
+}
+label{
+    font-size: large;
+    color: white;
+}
+
+/* .contact-image{
+    width:auto;
+    height: 100px;
+    border-radius: 50px;
+} */

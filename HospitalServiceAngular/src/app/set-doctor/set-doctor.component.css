@@ -1,0 +1,38 @@
+.bg{
+    background-image: url(https://medicaldialogues.in/h-upload/2022/05/03/500x300_175512-vector-cartoon-style-flat-illustration-hospital-building134830-781.webp), url(https://previews.123rf.com/images/dolgachov/dolgachov1307/dolgachov130700003/20557312-picture-of-young-team-or-group-of-doctors.jpg);
+    height: auto;
+    background-position: right, left;
+    background-repeat:no-repeat, no-repeat;
+   
+    background-size: 800px 620px, 550px 620px;
+   
+}
+
+.container{
+    position: relative;
+    margin-left: 0px;
+    width: 550px;
+    height: auto;
+    background-color: hsla(217, 17%, 41%, 0.918);
+    padding-bottom: 4px;
+    padding-top: 5px;
+    padding-left:90px; 
+    padding-right: 20px;
+    opacity: 90%;
+}
+
+.col-md-4{
+    width: 80%;
+}
+
+.mb-2{
+    padding-bottom: 15px;
+    color: rgb(4, 6, 107);
+}
+
+small{
+    color: red;
+}
+label{
+    color: whitesmoke;
+}
